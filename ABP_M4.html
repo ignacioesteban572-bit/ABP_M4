@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABP Módulo 4</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script defer src="assets/js/app.js"></script>
+  </head>
+  <body>
+    <h2>🍎 Frutería</h2>
+
+    <div>Caja: $<span id="caja">100000</span></div>
+
+    <div class="stock">
+      <div>
+        🍎 Manzanas: Stock <span id="stock-manzanas">-</span>kg -- Precio $<span
+          id="precio-manzanas"
+          >-</span
+        >/kg
+      </div>
+      <div>
+        🍐 Peras: Stock <span id="stock-peras">-</span>kg -- Precio $<span
+          id="precio-peras"
+          >-</span
+        >/kg
+      </div>
+      <div>
+        🍇 Uvas: Stock <span id="stock-uvas">-</span>kg -- Precio $<span
+          id="precio-uvas"
+          >-</span
+        >/kg
+      </div>
+      <div>
+        🍑 Duraznos: Stock <span id="stock-duraznos">-</span>kg -- Precio $<span
+          id="precio-duraznos"
+          >-</span
+        >/kg
+      </div>
+    </div>
+
+    <select id="fruta">
+      <option value="">Elegir fruta</option>
+      <option value="manzanas">🍎 Manzanas</option>
+      <option value="peras">🍐 Peras</option>
+      <option value="uvas">🍇 Uvas</option>
+      <option value="duraznos">🍑 Duraznos</option>
+    </select>
+
+    <input
+      type="number"
+      id="peso"
+      placeholder="Peso (kg)"
+      step="0.1"
+      min="0.1"
+    />
+    <button onclick="comprar()">Comprar</button>
+
+    <div>
+      <input
+        type="number"
+        id="pago"
+        placeholder="Pagar ($)"
+        step="1000"
+        disabled
+      />
+      <button id="btnPagar" onclick="pagar()" disabled>Pagar</button>
+    </div>
+
+    <div id="resultado" class="resultado"></div>
+  </body>
+</html>

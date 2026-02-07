@@ -1,0 +1,18 @@
+body { font-family: Arial; margin: 20px; }
+        input, select, button { 
+            display: block; 
+            margin: 10px 0; 
+            padding: 8px; 
+            width: 200px; 
+        }
+        .stock { 
+            background: #f0f0f0; 
+            padding: 15px; 
+            margin: 15px 0; 
+        }
+        .resultado { 
+            padding: 15px; 
+            margin: 15px 0; 
+            border: 1px solid #ccc; 
+            display: none; 
+        }
